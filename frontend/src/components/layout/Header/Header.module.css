@@ -1,0 +1,136 @@
+.headerContainer {
+  position: relative;
+  height: 90px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.headerContainer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: #e0e0e0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.headerContent {
+  width: 100%;
+  max-width: 1280px; 
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* --- Trái --- */
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: 100%;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  max-height: 100px;
+  width: auto;
+  object-fit: contain;
+}
+
+.navigation {
+  display: flex;
+  gap: 24px;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #888;
+  font-weight: 700;
+  font-size: 15px;
+  padding: 4px;
+  transition: color 0.2s;
+}
+
+.navLink:hover,
+.navLink.active {
+  color: #000;
+}
+
+
+/* --- Phải --- */
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  height: 100%;
+}
+
+.subLinks {
+  display: flex;
+  gap: 16px;
+}
+
+.subLink {
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.publishButton,
+.loginButton {
+  border: none;
+  padding: 8px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  transition: background-color 0.2s;
+}
+
+.publishButton {
+  background-color: #000;
+  color: #fff;
+}
+.publishButton:hover {
+  background-color: #333;
+}
+
+.loginButton {
+  background-color: #f2f2f2;
+  color: #000;
+}
+.loginButton:hover {
+  background-color: #e0e0e0;
+}
+
+.searchButton {
+  background: #f2f2f2;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  transition: background-color 0.2s;
+}
+.searchButton:hover {
+  background-color: #e0e0e0;
+}
