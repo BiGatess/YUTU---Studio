@@ -4,7 +4,7 @@ import styles from './Header.module.css';
 import logoUrl from '../../../assets/images/logo.jpg';
 import { FiSearch } from 'react-icons/fi';
 
-const Header = () => {
+const Header = ({ onLoginClick }) => {
   const getNavLinkClass = ({ isActive }) => {
     return isActive ? `${styles.navLink} ${styles.active}` : styles.navLink;
   };
@@ -31,7 +31,7 @@ const Header = () => {
           </div>
           <div className={styles.actions}>
             <button className={styles.publishButton}>Publish</button>
-            <button className={styles.loginButton}>Log In</button>
+            <button className={styles.loginButton} onClick={onLoginClick}>Log In</button>
           </div>
           <button className={styles.searchButton}>
             <FiSearch size={22} />

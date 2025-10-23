@@ -8,7 +8,6 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<MainLayout />}>
-        {/* Trang chủ */}
         <Route index element={<PlaceholderPage title="Trang Chủ" />} />
         <Route path="originals" element={<PlaceholderPage title="Originals" />} />
         <Route path="categories" element={<PlaceholderPage title="Categories" />} />
