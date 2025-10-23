@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { FaFacebook } from 'react-icons/fa';
-import { IoWarningOutline, IoEyeOutline, IoEyeOffOutline } from "react-icons/io5"; // THÊM ICON MẮT
+import { IoWarningOutline, IoEyeOutline, IoEyeOffOutline } from "react-icons/io5"; 
 
 const RegisterView = ({ styles, onNavigate }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [errors, setErrors] = useState({});
-  // THÊM STATE CHO CẢ 2 Ô MẬT KHẨU
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
 
@@ -51,7 +50,6 @@ const RegisterView = ({ styles, onNavigate }) => {
         </div>
         {errors.email && <div className={styles.errorMessage}><IoWarningOutline className={styles.errorIcon} />{errors.email}</div>}
 
-        {/* SỬA: Ô mật khẩu */}
         <div className={styles.inputGroup}>
           <input id="reg-password" type={showPassword ? 'text' : 'password'} className={`${styles.input} ${errors.password ? styles.inputError : ''}`} placeholder=" " value={password} onChange={(e) => setPassword(e.target.value)} />
           <label htmlFor="reg-password" className={styles.label}>Mật khẩu</label>
@@ -61,7 +59,6 @@ const RegisterView = ({ styles, onNavigate }) => {
         </div>
         {errors.password && <div className={styles.errorMessage}><IoWarningOutline className={styles.errorIcon} />{errors.password}</div>}
 
-        {/* SỬA: Ô xác nhận mật khẩu */}
         <div className={styles.inputGroup}>
           <input id="confirm-password" type={showConfirmPassword ? 'text' : 'password'} className={`${styles.input} ${errors.confirmPassword ? styles.inputError : ''}`} placeholder=" " value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} />
           <label htmlFor="confirm-password" className={styles.label}>Xác nhận mật khẩu</label>

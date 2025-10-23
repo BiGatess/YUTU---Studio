@@ -1,13 +1,13 @@
 import React, { useState } from 'react'; 
 import { FcGoogle } from 'react-icons/fc';
 import { FaFacebook } from 'react-icons/fa';
-import { IoWarningOutline, IoEyeOutline, IoEyeOffOutline } from "react-icons/io5"; // THÊM ICON MẮT
+import { IoWarningOutline, IoEyeOutline, IoEyeOffOutline } from "react-icons/io5"; 
 
 const LoginView = ({ styles, onNavigate }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({});
-  const [showPassword, setShowPassword] = useState(false); // THÊM STATE CHO VIỆC HIỆN/ẨN PASS
+  const [showPassword, setShowPassword] = useState(false); 
 
   const validateForm = () => {
     const newErrors = {};
@@ -56,7 +56,6 @@ const LoginView = ({ styles, onNavigate }) => {
           </div>
         )}
 
-        {/* SỬA: Thêm icon con mắt và thay đổi type input */}
         <div className={styles.inputGroup}>
           <input 
             id="password" 
