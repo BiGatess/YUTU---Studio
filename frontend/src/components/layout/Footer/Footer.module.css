@@ -1,0 +1,143 @@
+.footerContainer {
+  width: 100%;
+  padding:25px 0 5px 0;
+  background-color: #f8f8f8;
+  color: #555;
+  font-family: sans-serif;
+  border-top: 1px solid #e0e0e0;
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 25px; 
+}
+
+.socialIcons a {
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  font-size: 22px; 
+}
+
+.socialIcons a:nth-child(1) {
+  color: #1877F2; 
+}
+.socialIcons a:nth-child(2) {
+  color: #E4405F; 
+}
+
+.socialIcons a:hover {
+  transform: scale(1.15);
+  opacity: 0.8;
+}
+
+.footerNav {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 15px 25px;
+  font-size: 13px;
+  margin-bottom: 30px; /* Trả lại margin để tạo khoảng cách với logo */
+  align-items: center; 
+}
+
+.footerNav a {
+  text-decoration: none;
+  color: #555;
+}
+
+.footerNav a:hover {
+  text-decoration: underline;
+}
+
+/* Các class còn lại giữ nguyên như của bạn */
+.languageSelector {
+  position: relative;
+  display: inline-block;
+}
+
+.languageButton {
+  padding: 8px 10px 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 13px;
+  color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 120px; 
+}
+
+.languageButton .arrow {
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.languageOptions {
+  position: absolute;
+  bottom: calc(100% + 5px); 
+  left: 0;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px; 
+  list-style: none;
+  margin: 0;
+  padding: 8px 0;
+  z-index: 10;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.08);
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+.languageOptions li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #333;
+}
+
+.languageOptions li:hover {
+  background-color: #f0f0f0;
+}
+
+.languageOptions li.selected {
+  background-color: transparent; 
+  color: #333;
+}
+
+.checkmark {
+  color: #2dd77b; 
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.logoContainer {
+  margin-bottom: 10px;
+}
+
+.logoContainer img {
+  height: 60px;
+  width: auto;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #888;
+}
